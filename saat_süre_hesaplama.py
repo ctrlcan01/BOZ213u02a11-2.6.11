@@ -1,0 +1,9 @@
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+mins = mins + dura
+hour = (hour + mins // 60) % 24
+mins = mins % 60
+
+print(f"{hour:02d}:{mins:02d}")
